@@ -1,6 +1,6 @@
 import homePage from './main-menu';
-import './style.css';
 
 
-document.body.appendChild(homePage())
+
+// document.body.appendChild(homePage())
 

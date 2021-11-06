@@ -20,11 +20,11 @@ const homePage = () => {
      const about = document.createElement("h2")
      about.textContent = "About"
      header.appendChild(about)
- 
-     const headbtn = document.createElement("button")
-     headbtn.textContent = "BOOK A TABLE"
-     headbtn.classList.add ("headerBtn")
-     header.appendChild(headbtn)
+
+     const headBtn = document.createElement("button")
+     headBtn.classList.add('headerBtn')
+     headBtn.textContent = "Book Your Table";
+     header.appendChild(headBtn);
  
      const img = document.createElement("img")
      img.src = "../src/images/background.jpg"
