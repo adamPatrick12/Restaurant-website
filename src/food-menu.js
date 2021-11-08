@@ -1,3 +1,6 @@
+import homePage from './main-menu';
+import aboutPage from './about-menu';
+
 const foodPage = function () {
      const mainDiv = document.createElement("div")
      document.body.appendChild(mainDiv)
@@ -157,7 +160,21 @@ const foodPage = function () {
      div.appendChild(div7)
      div.appendChild(div8)
 
-     return mainDiv
+     home.addEventListener("click", function (){
+          while (mainDiv.firstChild) {
+              mainDiv.removeChild(mainDiv.firstChild);
+          }
+          document.body.appendChild(homePage())
+      })
+
+      about.addEventListener('click', function(){
+          while (mainDiv.firstChild) {
+              mainDiv.removeChild(mainDiv.firstChild);
+          }
+          document.body.appendChild(aboutPage())
+      })
+
+
 }
 
 export default foodPage;

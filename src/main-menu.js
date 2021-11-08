@@ -1,3 +1,6 @@
+import foodPage from './food-menu';
+import aboutPage from './about-menu';
+
 const homePage = () => {
     const mainDiv = document.createElement("div")
      document.body.appendChild(mainDiv)
@@ -59,10 +62,27 @@ const homePage = () => {
      mainDiv.appendChild(text2)
      mainDiv.appendChild(text3)
      mainDiv.appendChild(divbtn)
- 
-     return mainDiv
-                    
-     
+  
+    menu.addEventListener("click", function (){
+        while (mainDiv.firstChild) {
+            mainDiv.removeChild(mainDiv.firstChild);
+        }
+        document.body.appendChild(foodPage())
+    })
+
+    about.addEventListener('click', function(){
+        while (mainDiv.firstChild) {
+            mainDiv.removeChild(mainDiv.firstChild);
+        }
+        document.body.appendChild(aboutPage())
+    })
+
+    divbtn.addEventListener("click", function(){
+        while (mainDiv.firstChild) {
+            mainDiv.removeChild(mainDiv.firstChild);
+        }
+        document.body.appendChild(foodPage())
+    })
  }
  
  export default homePage;
