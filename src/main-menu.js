@@ -16,7 +16,7 @@ const homePage = () => {
      const menu = document.createElement("h2")
      menu.textContent = "Menu"
      header.appendChild(menu)
- 
+     
      const about = document.createElement("h2")
      about.textContent = "About"
      header.appendChild(about)
@@ -60,9 +60,9 @@ const homePage = () => {
      mainDiv.appendChild(text3)
      mainDiv.appendChild(divbtn)
  
-     
- 
      return mainDiv
+                    
+     
  }
  
  export default homePage;
